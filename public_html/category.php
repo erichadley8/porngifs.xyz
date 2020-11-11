@@ -267,10 +267,19 @@ $created = $cat[4];
 
     </div>
   <div class="row">
-    <div class="col">
-      Vertical Carosual Ad
+    <div class="col-2">
+      <!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882714" data-width="160" data-height="612"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882714});</script>
+<!--JuicyAds END-->
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882716" data-width="160" data-height="612"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882716});</script>
+<!--JuicyAds END-->
     </div>
-    <div class="col-9">
+    <div class="col-8">
 
       
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
