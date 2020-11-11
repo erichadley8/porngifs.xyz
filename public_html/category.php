@@ -63,6 +63,7 @@ $created = $cat[4];
   
   </head>
   <body>
+  <script type="application/javascript" src="https://syndication.realsrv.com/splash.php?idzone=4061833"></script>
   <script type="application/javascript">
 (function() {
 

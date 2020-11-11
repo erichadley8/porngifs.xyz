@@ -58,6 +58,7 @@ $result = $conn->query($query);
     <meta name="exoclick-site-verification" content="c1868bbd5315ffed1bbe529c2dbd7162">
   </head>
   <body>
+  <script type="application/javascript" src="https://syndication.realsrv.com/splash.php?idzone=4061833"></script>
   <script type="application/javascript">
 (function() {
 

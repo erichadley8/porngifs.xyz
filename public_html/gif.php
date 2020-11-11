@@ -69,6 +69,7 @@ mysqli_close($con);
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
+  <script type="application/javascript" src="https://syndication.realsrv.com/splash.php?idzone=4061833"></script>
   <script type="application/javascript">
 (function() {
 
