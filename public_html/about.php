@@ -10,27 +10,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-if(isset($_GET["p"])){
-  $page = $_GET["p"];
-}else{
-  $page = 1;
-}
-
-$records = 9;
-$offset = ($page - 1) * $records;
-
-$total_pages_sql = "SELECT COUNT(*) FROM gifs";
-$res3 = mysqli_query($conn,$total_pages_sql);
-$total_rows = mysqli_fetch_array($res3)[0];
-$total_pages = ceil($total_rows/$records);
-
-$query = "SELECT * FROM gifs ORDER BY id DESC LIMIT $offset, $records";
-$result = $conn->query($query);
-
-
-
-?> 
-
+?>
 
 <!doctype html>
 <html lang="en">
@@ -49,13 +29,11 @@ $result = $conn->query($query);
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Porn Gifs: Best XXX and Blowjob Gifs</title>
-    <meta name="description" content="Visit here is get the newest and top porn and blowjob gifs the internet has to offer.
-    Porn Gifs is updated multiple times a day with only the best XXX and blowjob gifs.  Check it out now!">
-
-    <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <meta name="juicyads-site-verification" content="dc3507f58561c6e2c5fd52aeb511db8a">
+    <title>About Us | Porn Gifs: Best XXX and Blowjob Gifs></title>
+    <meta name="description" content="Porn Gifs and Blowjob Gifs About Page.  Here at Porn gifs and blowjob gifs we are all
+    about providing the best collection of porn and blowjob gifs to our visitors at the highest quality">
   
+    <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
@@ -82,17 +60,19 @@ $result = $conn->query($query);
       </nav>
 
     <div class="container-fluid">
+    
     <div class="row">
-
+    
       <div class="col-6">
       <!-- JuicyAds v3.1 -->
       <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
       <ins id="882686" data-width="728" data-height="102"></ins>
       <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882686});</script>
       <!--JuicyAds END-->
-    </div>
+      </div>
 
-<div class="col-6">
+      <div class="col-6">
+
       <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882687" data-width="728" data-height="102"></ins>
@@ -100,52 +80,40 @@ $result = $conn->query($query);
 <!--JuicyAds END-->
     </div>
     </div>
-
-
     <div class="row">
     <div class="col">
-      
-     <!-- JuicyAds v3.1 -->
+<!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882688" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882688});</script>
-<!--JuicyAds END--> 
+<!--JuicyAds END-->
 </div>
 <div class="col">
- <!-- JuicyAds v3.1 -->
- <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+     <!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882689" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882689});</script>
 <!--JuicyAds END-->
 
-      </div>
+
+    </div>
     <div class="col-5">
       <div class="jumbotron">
-        <h1 class="display-4">The Best and Newest Porn Gifs, XXX Gifs and Blowjob Gifs</h1>
-        <p class="lead">
-          This is Porn Gif, XXX Gif and Blowjob Gif the best X rated gif media site on the internet.
-          Here you can find the best and top rated porn gifs and blowjob gifs that the porn industry
-          has to offer.  Find it here at Porn Gif and Blowjob Gif.
+        <h1 class="display-4">Top Quality Porn Gif and Blowjob Gif About Us Page</h1>
+        <p class="lead">Porn Gifs and Blowjob Gifs offer you several different options to do
+          with the XXX and porn content as you so pleasure.  Please feel free to share, Download
+          and embed of porn gifs.  Please take the time to learn more about how to use Porn gif and blowjob gif website below.
         </p>
-        <hr class="my-4">
-        <p>
-          Porn Gif and Blowjob Gif provides top quality media taken from the best and top rated porn videos 
-          and porn movies in the industry in gif format.  Porn videos and porn movies can take a lot of resources
-          to load and maintain on a slow or limited internet connect.  Here at Porn Gif and Blowjob Gif we 
-          have a solution for your porno needs even if you have a limited network resources.  Also easily download
-          and save the porn and blowjob gifs on your hardware without having to use your network connection at all.
-        </p>
-        <a class="btn btn-primary btn-lg" href="about.php" role="button">Learn more</a>
       </div>
-    
     </div>
        
       <div class="col">
-      <!-- JuicyAds v3.1 -->
+     <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882691" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882691});</script>
 <!--JuicyAds END-->
+
     </div>
     <div class="col">
 <!-- JuicyAds v3.1 -->
@@ -157,22 +125,22 @@ $result = $conn->query($query);
     
     </div>
     <div class="row">
-        <div class="col-6">
+      <div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882693" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882693});</script>
 <!--JuicyAds END-->
-    </div>
 
-<div class="col-6">
+      </div>
+
+      <div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882696" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882696});</script>
 <!--JuicyAds END-->
-</div>
-
+      </div>
     </div>
     
     <div class="row">
@@ -187,71 +155,67 @@ $result = $conn->query($query);
 <ins id="882698" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882698});</script>
 <!--JuicyAds END-->
-
-    </div>
+      
+      
+          </div>
     <div class="col-8">
-    <h1 class="text-center">Most Recent Porn and Blowjob Gifs</h1>
       <div class="row justify-content-center">
-  
-      <!-- JuicyAds v3.1 -->
+        <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882707" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882707});</script>
 <!--JuicyAds END-->
-
       </div>
-    <div class="card-columns">
+    <div class="container">
+        <h1>About Porn Gifs and Blow Gifs Site</h1>
+        <h2>At Porn gif and blowjob gif we only offer the best XXX gifs</h2>
+        <p>
+            Here at Porn gif and blowjob gifs we try to supply our visitors with the best experience they
+            can get by coming to our site.  Our services offer people searching for the best porn gifs and blow jobs gifs 
+            the internet has to offer.  Blowjob gifs updates it's massive database of porn gifs multiple time a day so you
+            can have the best blow job and xxx gifs the internet has to offer.  We do not want you to get old content 
+            because porn gif believes in the importance of having the need to seek and search for blowjob gifs.    
+        </p>
 
-<?php
-  while($row = $result->fetch_assoc()){
+        <p>
+            Blowjob gifs and porn gifs can be a lot better than porn videos because of the resources they take.
+            So people cannot afford the data to download and stream porn videos so they have to come to porn gif and
+            blow gifs to get their needs met.  The quality that you can get from blowjob gifs is much better than
+            porn movies as well because it only shows the best parts of the porn scene.
+        </p>
 
-?>
-<div class="card">
-    <a href="gif.php?id=<?php echo $row["id"]?>"><img src="http://porngifs.lovestoblog.com/gifs/<?php echo $row["id"]?>.gif" class="card-img-top" alt="<?php echo $row["title"]?>"></a>
-    <div class="card-body">
-      <h5 class="card-title"><?php echo $row["title"]?></h5>
-      <p class="card-text"><?php echo $row["description"]?></p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted"><?php echo $row["created"]?></small>
-    </div>
-</div>
+        <p>
+            Porn Gif offers the user the ability to download the gifs to their hard drives so they do not have to keep 
+            returning to view their favorite blowjob and titty fuck gifs.  In this day and age data can cost a lot of money 
+            which people cannot afford.  Porn gif thrives on helping people solve this problem by allowing its visitors
+            to download the porn gifs directly from the site with easy.
+        </p>
+        <p>
+            Blow job gifs has the best content on the internet.  Porn gif updates it databases and classifies and organizes its porn gif 
+            assets the best in the porn gif industry.  We seperate the porn gifs via tags, categories and porn stars.  So if you have 
+            a specific porn gif you are looking for you can come to the right place.
+        </p>
+        <p>
+            Enjoy porn gif and blow gif.  Please don't hesitate to share the porn gif content with other and use the site as 
+            you want.  We hope you enjoy your visit and we hope you return here at porn gif and blow gif for our xxx gif services.
 
-<?php
-}
-?>
-</div>
+        </p>
+
+
+     </div>
+
 
 
 
 
 <div class="row justify-content-center">
-      <!-- JuicyAds v3.1 -->
+     <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882708" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882708});</script>
 <!--JuicyAds END-->
       </div>
 
-
-
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item"><a class="page-link" href="?p=1">First</a></li>
-          
-          <li class="page-item <?php if($page<=1){ echo "disabled"; } ?>">
-            <a class="page-link" href="<?php if($page <= 1){ echo '#'; } else { echo "?p=".($page - 1); } ?>">Previous</a>
-          </li>
-
-          <li class="page-item <?php if($page >= $total_pages){ echo 'disabled'; } ?>">
-            <a class="page-link" href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?p=".($page + 1); } ?>">Next</a>
-          </li>
-          
-          <li class="page-item"><a class="page-link" href="?p=<?php echo $total_pages ?>">Last</a></li>
-        </ul>
-      </nav>
-  
-  
     </div>
     <div class="col-2">
 
@@ -302,10 +266,9 @@ $result = $conn->query($query);
 <ins id="882716" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882716});</script>
 <!--JuicyAds END-->
-
     </div>
     <div class="col-8">
-
+                
     <div class="row justify-content-center">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
@@ -321,6 +284,7 @@ $result = $conn->query($query);
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882726});</script>
 <!--JuicyAds END-->
     </div>
+
 
 <div class="row justify-content-center">
 <!-- JuicyAds v3.1 -->
@@ -382,7 +346,7 @@ $result = $conn->query($query);
       </a>
     </div>
     
-    
+
     <div class="row justify-content-center">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
@@ -406,8 +370,8 @@ $result = $conn->query($query);
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882732});</script>
 <!--JuicyAds END-->
 </div>
-
-
+    
+    
     
     </div>
     <div class="col-2">
@@ -421,38 +385,41 @@ $result = $conn->query($query);
 <ins id="882718" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882718});</script>
 <!--JuicyAds END-->
-
-
     </div>
   </div>
 
 
-<div class="row">
-  <div class="col-6">
+
+
+  <div class="row">
+      
+          <div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882720" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882720});</script>
 <!--JuicyAds END-->
-  </div>
+          </div>
 
-<div class="col-6">
+          <div class="col-6">
+
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882721" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882721});</script>
 <!--JuicyAds END-->
-
-</div>
-
-</div>
+          </div>
 
 
+    </div>
 
 
-  </div>
+      
+
+    </div>
 
     
+     
     <footer>
         <ul class="nav justify-content-center navbar-dark bg-dark">
           <li class="nav-item">
@@ -467,23 +434,12 @@ $result = $conn->query($query);
         </ul>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  
-  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+   <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fac0d6152e70f46"></script>
 
+   
     </body>
 </html>
-
-
-
-
-
-
-
-
-<?php
-$conn->close();
-
-?>
