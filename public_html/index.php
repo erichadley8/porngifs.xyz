@@ -161,7 +161,7 @@ $result = $conn->query($query);
     </div>
     
     <div class="row">
-    <div class="col">
+    <div class="col-2">
       <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882697" data-width="160" data-height="612"></ins>
@@ -174,7 +174,7 @@ $result = $conn->query($query);
 <!--JuicyAds END-->
 
     </div>
-    <div class="col-9">
+    <div class="col-8">
     <h1 class="text-center">Most Recent Porn and Blowjob Gifs</h1>
       <div class="row">
         Content Header Ad Space
@@ -228,7 +228,7 @@ $result = $conn->query($query);
   
   
     </div>
-    <div class="col">
+    <div class="col-2">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882699" data-width="728" data-height="102"></ins>
