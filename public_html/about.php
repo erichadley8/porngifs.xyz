@@ -423,13 +423,13 @@ if (!$conn) {
     <footer>
         <ul class="nav justify-content-center navbar-dark bg-dark">
           <li class="nav-item">
-            <a class="nav-link" href="#">Sitemap</a>
+            <a class="nav-link" href="sitemap.php">Sitemap</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Terms of Use</a>
+            <a class="nav-link" href="terms.php">Terms of Use</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Privacy and Policy</a>
+            <a class="nav-link" href="policy.php">Privacy and Policy</a>
           </li>
         </ul>
     </footer>

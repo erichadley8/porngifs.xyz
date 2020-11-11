@@ -1,5 +1,4 @@
 <?php
-
 $servername = "localhost";
 $username = "gif";
 $password = "Scbwd2blah123";
@@ -7,44 +6,11 @@ $database = "porngifs";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
-$id = $_GET["id"];
-
-$query = "SELECT * FROM gifs WHERE id=$id";
-
-$res = mysqli_query($conn, $query);
-
-$row = mysqli_fetch_row($res);
-
-$id = $row[0];
-$title = $row[1];
-$description = $row[2];
-$categoryId = $row[3];
-$created = $row[4];
-
-
-$query2 = "SELECT * FROM gifs";
-
-$res2 = mysqli_query($conn,$query2);
-
-$num_rows = mysqli_num_rows($res2);
-
-$previous = $id - 1;
-$next = $id + 1;
-
-if($id==1){
-  $previous = $num_rows;
-  $next = $id + 1;
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
 }
-if($id==$num_rows){
-  $previous = $id - 1;
-  $next = 1;
-}
-
-mysqli_free_result($res);
-mysqli_close($con);
 
 ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -63,8 +29,9 @@ mysqli_close($con);
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Porn Gifs: Best XXX and Blowjob Gifs | <?php echo $title ?></title>
-    <meta name="description" content="<?php echo $description?> | Porn Gifs and Blowjob Gifs">
+    <title>About Us | Porn Gifs: Best XXX and Blowjob Gifs></title>
+    <meta name="description" content="Porn Gifs and Blowjob Gifs About Page.  Here at Porn gifs and blowjob gifs we are all
+    about providing the best collection of porn and blowjob gifs to our visitors at the highest quality">
   
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
@@ -132,38 +99,12 @@ mysqli_close($con);
     </div>
     <div class="col-5">
       <div class="jumbotron">
-        <h1 class="display-4">Top Quality Porn Gif and Blowjob Gif</h1>
+        <h1 class="display-4">Top Quality Porn Gif and Blowjob Gif About Us Page</h1>
         <p class="lead">Porn Gifs and Blowjob Gifs offer you several different options to do
           with the XXX and porn content as you so pleasure.  Please feel free to share, Download
-          and embed of porn gifs.
+          and embed of porn gifs.  Please take the time to learn more about how to use Porn gif and blowjob gif website below.
         </p>
-        <hr class="my-4">
-        
-        <button class="btn btn-primary btn-lg" href="gifs/<?php echo $id?>.gif" download role="button">Download</button>
-        
-
-        <button class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Embed</button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Copy Code</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <textarea class="form-control" rows="3"><iframe src="http://porngifs.lovestoblog.com/gifs/<?php echo $id;?>.gif"></iframe></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
       </div>
-    
     </div>
        
       <div class="col">
@@ -226,11 +167,127 @@ mysqli_close($con);
 <!--JuicyAds END-->
       </div>
     <div class="container">
-    <h1><?php echo $title?></h1>
-        <h2><?php echo $description?></h2>
-        
-        <img src="http://porngifs.lovestoblog.com/gifs/<?php echo $id?>.gif" style="width:100%" alt="<?php echo $title?>"/>
-    </div>
+        <h1>Terms of Use Porn Gifs and Blow Gifs Site</h1>
+
+        <h3>
+Acceptance of the Terms of Service
+</h3>
+<p>
+By using or visiting (individually a "Website" and, collectively, the "Websites"), or any content, functionality and services offered on or through any of the Websites, whether as a guest or a registered user, or by clicking to accept or agree to the Terms of Service when this option is made available to you, you signify your agreement to these Terms of Service and our Privacy Policy
+These Terms of Service apply to all users, including users who are also contributors of Content, of any of the Websites, web pages, interactive features, embeddable player, uploader and other applications, widgets, blogs, social networks, social network "tabs", or other online or wireless offerings that post a link to these Terms of Service, whether accessed via computer, mobile device, or other technology, manner, or means.
+
+"Content" includes the text, software, scripts, graphics, photos, sounds, music, videos, audiovisual combinations, interactive features, textual content, and other materials you may view, upload, publish, submit, make available, display, communicate or post on, or transmit to other users or other person or access through, a Website.
+
+If you do not agree to any of these terms of Service or our Privacy Policy, please do not access or use any of the Websites.
+
+You consent to entering these Terms of Service electronically, and to storage of records related to these Terms of Service in electronic form.
+</p>
+
+<h3>Ability to Accept Terms of Service</h3>
+
+<p>
+You affirm that you are at least 18 years of age or the age of majority in the jurisdiction you are accessing a Website from, and are fully able and competent to enter into the terms, conditions, obligations, affirmations, representations, and warranties set forth in these Terms of Service, and to abide by and comply with these Terms of Service. If you are under 18 or the applicable age of majority, please do not use any of the Websites. You also represent that the jurisdiction from which you access a Website does not prohibit the receiving or viewing of sexually explicit content.
+</p>
+
+
+<h3>Changes to the Terms of Service</h3>
+
+<p>
+We reserve the right to amend these Terms of Service at any time and without notice, and it is your responsibility to review these Terms of Service for any changes. Your use of a Website following any amendment of these Terms of Service will signify your assent to and acceptance of its revised terms.
+
+The updated version of the Terms of Service supersedes any prior versions immediately upon being posted, and the prior version(s) shall have no continuing legal effect. </p>
+
+<h3>About Our Websites</h3>
+
+<p>
+The Websites allow for uploading, sharing and general viewing of various types of adult-oriented content by users, registered and unregistered, and models who desire to share and view visual depictions of adult-oriented content, including sexually explicit images. In addition, the Websites contain texts, messages, files, data, information, images, photos, videos, recordings, materials, code or content of any kind and other materials posted or uploaded by users and models.
+
+The Websites may contain links to third party sites that are not owned or controlled by the Websites or their operator. The Websites have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third party sites. In addition, the Websites will not and cannot censor or edit the content of any third-party site. By using any of the Websites, you expressly relieve us from all liability arising from your use of any third-party sites. Accordingly, we encourage you to be aware when you leave the Websites and to read the terms, conditions, and privacy policies of each other sites that you visit.
+
+The Websites are for your personal use and shall not be used for any commercial endeavor except those specifically endorsed or approved by the Websites.
+
+The Websites are for adult-oriented content. Other categories of content may be rejected or deleted in our sole discretion. We may, in our sole discretion and at nay time, remove any content on the Websites.
+
+You understand and acknowledge that when using any of the Websites, you will be exposed to content from a variety of sources, and that the Websites are not responsible for the accuracy, usefulness, safety, or intellectual property rights of or relating to such content. You further understand and acknowledge that you may be exposed to content that is inaccurate, offensive, indecent, or objectionable, and you agree to waive, and hereby do waive, any legal or equitable rights or remedies you have or may have against any of the Websites with respect thereto, and agree to indemnify and hold the Websites, their site operator, their parent corporation, their respective affiliates, licensors, service providers, officers, directors, employees, agents, successors and assigns, harmless to the fullest extent allowed by law regarding all matters related to your use of any of the Websites.
+</p>
+
+
+
+<h3>Use of Websites</h3>
+
+<p>
+
+You agree that you will only use the Websites and our services for the lawful purposes expressly permitted and contemplated by these Terms of Service. You may not use the Websites and our services for any other purposes, including but not limited to commercial purposes, without our express written consent.
+
+You agree that you will view the Websites and their content unaltered and unmodified. You acknowledge and understand that you are prohibited from modifying the Websites or eliminating any of the content of the Websites, including ads. By using the Websites, you expressly agree to accept advertising served on and through the Websites and to refrain from using ad blocking software or to disable ad blocking software before visiting the Websites.
+
+Content is provided to you AS IS. You may access Content for your information and personal use solely as intended through the provided functionality of the Websites and as permitted under these Terms of Service. You shall not download any Content unless you see a "download" or similar link displayed by the Websites for that Content. You shall not copy, reproduce, distribute, transmit, broadcast, display, sell, license, or otherwise exploit any Content for any other purposes without the prior written consent of the Websites’ operator or the respective licensors of the Content. The Websites and their licensors reserve all rights not expressly granted in and to the Websites and the Content.
+</p>
+
+
+
+<h3>Reliance on Information Posted</h3>
+<p>
+The information presented on or through the Websites is made available solely for general information purposes. We do not warrant the accuracy, completeness, or usefulness of this information. Any reliance you place on such information is strictly at your own risk. We disclaim all liability and responsibility arising from any reliance placed on such materials by you or any other visitor to the Websites, or by anyone who may be informed of any of its contents.
+
+The Websites include Content provided by third parties, including materials provided by other users, bloggers and third-party licensors, syndicators, aggregators, and/or reporting services. All statements and/or opinions expressed in these materials, and all articles and responses to questions and other content, other than the content provided by us, are solely the opinions and the responsibility of the person or entity providing those materials. These materials do not necessarily reflect our opinion. We are not responsible, or liable to you or any third party, for the content or accuracy of any materials provided by any third parties.
+</p>
+<h3>
+Changes to the Websites
+</h3>
+<p>
+We may update the content on the Websites from time to time, but their content is not necessarily complete or up-to-date. Any of the material on the Websites may be out of date at any given time, and we are under no obligation to update such material.
+</p>
+
+<h3>
+Disclaimers
+</h3>
+<p>
+YOU USE THE WEBSITES AT YOUR SOLE RISK. WE PROVIDE THE WEBSITES "AS IS" AND "AS AVAILABLE". TO THE FULLEST EXTENT PERMITTED BY LAW, THE WEBSITES, THEIR SITE OPERATOR, AND THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS DISCLAIM ALL WARRANTIES OF ANY KIND RELATED TO THE WEBSITES AND GOODS OR SERVICES PURCHASED AND OBTAINED THROUGH THE WEBSITES, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM YOUR USE OF THE WEBSITES. WE MAKE NO WARRANTY OR REPRESENTATION ABOUT THE ACCURACY OR COMPLETENESS OF THE WEBSITES’ CONTENT OR THE CONTENT OF ANY SITES LINKED TO THE WEBSITES OR THAT THE WEBSITES WILL MEET YOUR REQUIREMENTS AND ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, (II) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE WEBSITES OR OUR SERVICES, (III) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (IV) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE WEBSITES OR OUR SERVICES, (IV) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE WEBSITES OR OUR SERVICES BY ANY THIRD PARTY, AND/OR (V) ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE WEBSITES OR OUR SERVICES. THE WEBSITES DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE WEBSITES OR OUR SERVICES OR ANY HYPERLINKED SERVICES OR FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND, THE WEBSITES WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
+
+NO INFORMATION OBTAINED BY YOU FROM US OR THROUGH THE WEBSITES SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS.
+</p>
+
+<h3>
+Limitation of Liability
+</h3>
+<p>
+IN NO EVENT SHALL THE WEBSITES, THEIR SITE OPERATOR, AND THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS, BE LIABLE TO YOU FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES WHATSOEVER RESULTING FROM ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, (II) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF OUR WEBSITES OR SERVICES, (III) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (IV) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM OUR WEBSITES, (IV) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE, WHICH MAY BE TRANSMITTED TO OR THROUGH OUR WEBSITES OR SERVICES BY ANY THIRD PARTY, (V) ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF YOUR USE OF ANY CONTENT POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA OUR WEBSITES OR SERVICES, AND/OR (VI) INTERACTIONS YOU HAVE WITH THIRD-PARTY ADVERTISEMENTS OR SERVICE PROVIDERS, OR THIRD-PARTY SITES, FOUND ON OR THROUGH THE WEB SITES, INCLUDING PAYMENT AND DELIVERY OF RELATED GOODS OR SERVICES, AND ANY OTHER TERMS, CONDITIONS, POLICIES, WARRANTIES OR REPRESENTATIONS ASSOCIATED WITH SUCH DEALINGS, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT THE WEBSITES OR THEIR SITE OPERTOR ARE ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING LIMITATION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW IN THE APPLICABLE JURISDICTION.
+
+YOU SPECIFICALLY ACKNOWLEDGE THAT THE WEBSITES SHALL NOT BE LIABLE FOR CONTENT OR THE DEFAMATORY, OFFENSIVE, OR ILLEGAL CONDUCT OF ANY THIRD PARTY, AND THAT THE RISK OF HARM OR DAMAGE FROM THE FOREGOING RESTS ENTIRELY WITH YOU.
+
+YOU FURTHER ACKNOWLEGE THAT ANY CONTENT UPLOADED TO THE SITE MAY BE VIEWED, DOWNLOADED, REPUBLISHED, AND DISTRIBUTED – POTENTIALLY IN VIOLATION OF YOUR RIGHTS OR THIS AGREEMENT – AND THAT YOU ASSUME SUCH RISKS AS A MATERIAL PART OF THESE TERMS OF SERVICE.
+
+YOU AGREE NOT TO FILE ANY LAWSUIT OR PROCEEDING INCONSISTENT WITH THE FOREGOING LIABILITY LIMITATIONS.
+
+Any claim by you that may arise in connection with these Terms of Service will be compensable by monetary damages, and you will in no event be entitled to injunctive or other equitable relief.
+</p>
+<h3>
+Limitation on Time to File Claims
+</h3>
+<p>
+REGARDLESS OF ANY STATUTE OR LAW TO THE CONTRARY, ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO THESE TERMS OF SERVICE OR THE WEBSITES MUST BE COMMENCED WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM IS PERMANENTLY BARRED.
+</p>
+
+<h3>Assignment</h3>
+<p>
+These Terms of Service, and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by us without restriction.
+</p>
+
+<h3>Miscellaneous</h3>
+<p>
+These Terms of Service, your use of the Websites, and the relationship between you and us shall be governed by the laws of Cyprus, without regard to conflict of law rules. Nothing contained in these Terms of Service shall constitute an agreement to the application of the laws of any other nation to the Websites. You agree that the Websites shall be deemed passive Websites that do not give rise to personal jurisdiction over us, either specific or general, in jurisdictions other than Cyprus. The sole and exclusive jurisdiction and venue for any action or proceeding arising out of or related to these Terms of Service shall be in an appropriate court located in Limassol, Cyprus. You hereby submit to the jurisdiction and venue of said Courts.
+
+No waiver by us of any term or condition set forth in these Terms of Service shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure by us to assert a right or provision under these Terms of Service shall not constitute a waiver of such right or provision.
+
+If any provision of these Terms of Service is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect the validity of the remaining provisions of these Terms of Service, which shall remain in full force and effect.
+
+The Terms of Service, our Privacy Policy, our Copyright Policy and any documents they expressly incorporate by reference constitute the sole and entire agreement between you and us with respect to the Websites.
+
+We may terminate these Terms of Service for any or no reason at any time by notifying you through a notice on the Websites, by email, or by any other method of communication. Any such termination will be without prejudice to our rights, remedies, claims, or defenses hereunder. Upon termination of the Terms of Service, you will no longer have a right to access your account or your Content. We will not have any obligation to assist you in migrating your data or your Content and we may not keep any back up of any of your Content. We undertake no responsibility for deleting your Content under these Terms of Service. Note that, even if your Content is deleted from our active servers, it may remain in our archives (but we have no obligation to archive or back-up your Content), and subject to the licenses set forth in these Terms of Service.</p>
+
+
+     </div>
 
 
 
@@ -244,17 +301,6 @@ mysqli_close($con);
 <!--JuicyAds END-->
       </div>
 
-
-      <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="gif.php?id=<?php echo $previous ?>">Previous</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="gif.php?id=<?php echo $next ?>">Next</a>
-    </li>
-  </ul>
-</nav>
     </div>
     <div class="col-2">
 
@@ -474,7 +520,6 @@ mysqli_close($con);
     </footer>
 
 
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
    <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -483,3 +528,6 @@ mysqli_close($con);
    
     </body>
 </html>
+
+
+

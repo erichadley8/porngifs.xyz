@@ -442,19 +442,20 @@ $created = $cat[4];
   </div>
 
     
-    <footer>
+  <footer>
         <ul class="nav justify-content-center navbar-dark bg-dark">
           <li class="nav-item">
-            <a class="nav-link" href="#">Sitemap</a>
+            <a class="nav-link" href="sitemap.php">Sitemap</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Terms of Use</a>
+            <a class="nav-link" href="terms.php">Terms of Use</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Privacy and Policy</a>
+            <a class="nav-link" href="policy.php">Privacy and Policy</a>
           </li>
         </ul>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
