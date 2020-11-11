@@ -36,6 +36,9 @@ if (!$conn) {
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
+  <!-- JuicyAds PopUnders v3 Start -->
+<script type="text/javascript" src="https://js.juicyads.com/jp.php?c=34a41303r284u4q2t2f4y2e484&u=http%3A%2F%2Fwww.juicyads.rocks"></script>
+<!-- JuicyAds PopUnders v3 End -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.php">Top Quality Porn Gifs and Blowjob Gifs</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
