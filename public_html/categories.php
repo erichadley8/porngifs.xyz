@@ -38,6 +38,7 @@ $result = $conn->query($query);
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
+  <script type="application/javascript" data-idzone="4061843"  data-ad_frequency_count="1"  data-ad_frequency_period="720"  data-browser_settings="1" data-ad_trigger_method="3" src="https://a.realsrv.com/fp-interstitial.js"></script>
   <script type="application/javascript">
     var ad_idzone = "4061839",
     ad_width = "900",

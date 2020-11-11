@@ -58,6 +58,7 @@ $result = $conn->query($query);
     <meta name="exoclick-site-verification" content="c1868bbd5315ffed1bbe529c2dbd7162">
   </head>
   <body>
+  <script type="application/javascript" data-idzone="4061843"  data-ad_frequency_count="1"  data-ad_frequency_period="720"  data-browser_settings="1" data-ad_trigger_method="3" src="https://a.realsrv.com/fp-interstitial.js"></script>
   <script type="application/javascript">
     var ad_idzone = "4061839",
     ad_width = "900",
