@@ -105,6 +105,8 @@ mysqli_close($con);
 <ins id="882688" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882688});</script>
 <!--JuicyAds END-->
+</div>
+<div class="col">
      <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882689" data-width="160" data-height="612"></ins>
@@ -150,8 +152,11 @@ mysqli_close($con);
     </div>
        
       <div class="col">
-     vertical ad
-
+     <!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882691" data-width="160" data-height="612"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882691});</script>
+<!--JuicyAds END-->
 
     </div>
     
