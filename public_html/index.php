@@ -55,7 +55,7 @@ $result = $conn->query($query);
 
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta name="juicyads-site-verification" content="dc3507f58561c6e2c5fd52aeb511db8a">
-  
+    <meta name="exoclick-site-verification" content="c1868bbd5315ffed1bbe529c2dbd7162">
   </head>
   <body>
   <!-- JuicyAds PopUnders v3 Start -->
