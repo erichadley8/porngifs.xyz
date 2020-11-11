@@ -116,7 +116,7 @@ $result = $conn->query($query);
 
 ?>
 <div class="card">
-    <a href="gif.php?id=<?php echo $row["id"]?>"><img src="gifs/<?php echo $row["id"]?>.gif" class="card-img-top" alt="<?php echo $row["title"]?>"></a>
+    <a href="gif.php?id=<?php echo $row["id"]?>"><img src="http://porngifs.lovestoblog.com/gifs/<?php echo $row["id"]?>.gif" class="card-img-top" alt="<?php echo $row["title"]?>"></a>
     <div class="card-body">
       <h5 class="card-title"><?php echo $row["title"]?></h5>
       <p class="card-text"><?php echo $row["description"]?></p>
@@ -206,7 +206,7 @@ $result = $conn->query($query);
         ?>
 
         <div class="carousel-item">
-          <a href="gif.php?id=<?php echo $row["id"] ?>"><img src="gifs/<?php echo $row["id"] ?>.gif" height="600" class="d-block w-100" alt="<?php echo $row["title"] ?>"></a>
+          <a href="gif.php?id=<?php echo $row["id"] ?>"><img src="http://porngifs.lovestoblog.com/gifs/<?php echo $row["id"] ?>.gif" height="600" class="d-block w-100" alt="<?php echo $row["title"] ?>"></a>
           <div class="carousel-caption d-none d-md-block">
             <h5><?php echo $row["title"] ?></h5>
             <p><?php echo $row["description"] ?></p>
