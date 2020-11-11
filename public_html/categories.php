@@ -75,7 +75,6 @@ $result = $conn->query($query);
 <!--JuicyAds END-->
 
 
-
     </div>
     <div class="col-9">
       <div class="jumbotron">
@@ -102,7 +101,6 @@ $result = $conn->query($query);
 <ins id="882689" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882689});</script>
 <!--JuicyAds END-->
-    </div>
     
     </div>
     

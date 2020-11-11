@@ -100,12 +100,12 @@ mysqli_close($con);
     </div>
     <div class="row">
     <div class="col">
-
-    <!-- JuicyAds v3.1 -->
+<!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882688" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882688});</script>
 <!--JuicyAds END-->
+    
 
 
     </div>
@@ -151,7 +151,6 @@ mysqli_close($con);
 <ins id="882689" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882689});</script>
 <!--JuicyAds END-->
-
 
 
     </div>
