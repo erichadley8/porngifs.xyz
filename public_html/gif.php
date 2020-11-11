@@ -308,6 +308,15 @@ mysqli_close($con);
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882726});</script>
 <!--JuicyAds END-->
     </div>
+
+
+<div class="row justify-content-center">
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882733" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882733});</script>
+<!--JuicyAds END-->
+</div>
       
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -378,6 +387,13 @@ mysqli_close($con);
 <!--JuicyAds END-->
 </div>
 
+<div class="row justify-content-center">
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882732" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882732});</script>
+<!--JuicyAds END-->
+</div>
     
     
     
