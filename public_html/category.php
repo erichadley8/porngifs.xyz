@@ -79,6 +79,12 @@ $created = $cat[4];
         <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882686});</script>
         <!--JuicyAds END-->
 
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882687" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882687});</script>
+<!--JuicyAds END-->
+
     </div>
     <div class="row">
     <div class="col">
