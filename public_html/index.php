@@ -45,6 +45,8 @@ $result = $conn->query($query);
     Porn Gifs is updated multiple times a day with only the best XXX and blowjob gifs.  Check it out now!">
 
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="juicyads-site-verification" content="dc3507f58561c6e2c5fd52aeb511db8a">
+  
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
