@@ -105,11 +105,15 @@ mysqli_close($con);
 <ins id="882688" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882688});</script>
 <!--JuicyAds END-->
-    
+     <!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882689" data-width="160" data-height="612"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882689});</script>
+<!--JuicyAds END-->
 
 
     </div>
-    <div class="col-9">
+    <div class="col-6">
       <div class="jumbotron">
         <h1 class="display-4">Top Quality Porn Gif and Blowjob Gif</h1>
         <p class="lead">Porn Gifs and Blowjob Gifs offer you several different options to do
@@ -146,11 +150,7 @@ mysqli_close($con);
     </div>
        
       <div class="col">
-      <!-- JuicyAds v3.1 -->
-<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
-<ins id="882689" data-width="160" data-height="612"></ins>
-<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882689});</script>
-<!--JuicyAds END-->
+     vertical ad
 
 
     </div>
