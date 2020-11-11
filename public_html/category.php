@@ -63,6 +63,15 @@ $created = $cat[4];
   
   </head>
   <body>
+  <script type="application/javascript">
+    pn_idzone = 4061883;
+    pn_sleep_seconds = 0;
+    pn_is_self_hosted = 1;
+    pn_soft_ask = 0;
+    pn_filename = "/worker.js";
+</script>
+
+<script type="application/javascript" src="https://js.wpnsrv.com/pn.php"></script>
   <script type="application/javascript" data-idzone="4061843"  data-ad_frequency_count="1"  data-ad_frequency_period="720"  data-browser_settings="1" data-ad_trigger_method="3" src="https://a.realsrv.com/fp-interstitial.js"></script>
   <script type="application/javascript">
     var ad_idzone = "4061839",
