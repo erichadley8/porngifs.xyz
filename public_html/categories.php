@@ -243,6 +243,21 @@ $result = $conn->query($query);
     </div>
     <div class="col-8">
 
+    <div class="row justify-content-center">
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882724" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882724});</script>
+<!--JuicyAds END-->
+    </div>
+
+    <div class="row justify-content-center">
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882726" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882726});</script>
+<!--JuicyAds END-->
+    </div>
       
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -297,6 +312,22 @@ $result = $conn->query($query);
     </div>
     
     
+    <div class="row justify-content-center">
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882729" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882729});</script>
+<!--JuicyAds END-->
+</div>
+
+<div class="row justify-content-center">
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882730" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882730});</script>
+<!--JuicyAds END-->
+</div>
+
     
     
     </div>
