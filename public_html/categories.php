@@ -68,7 +68,14 @@ $result = $conn->query($query);
     </div>
     <div class="row">
     <div class="col">
-      Vertical Sidebar Ad
+    <!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882688" data-width="160" data-height="612"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882688});</script>
+<!--JuicyAds END-->
+
+
+
     </div>
     <div class="col-9">
       <div class="jumbotron">
