@@ -25,6 +25,8 @@ $result = $conn->query($query);
     <title>Categories Page | Porn Gifs: Best XXX and Blowjob Gifs</title>
     <meta name="description" content="Visit here to see what Porn Gifs and Blow Gifs categories have to offer.
     Porn Gifs has a vast arrangement of categories which are updated daily.  Don't miss your chance!">
+
+    <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">

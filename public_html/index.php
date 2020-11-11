@@ -43,6 +43,8 @@ $result = $conn->query($query);
     <title>Porn Gifs: Best XXX and Blowjob Gifs</title>
     <meta name="description" content="Visit here is get the newest and top porn and blowjob gifs the internet has to offer.
     Porn Gifs is updated multiple times a day with only the best XXX and blowjob gifs.  Check it out now!">
+
+    <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">

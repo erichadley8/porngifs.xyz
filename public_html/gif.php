@@ -56,6 +56,8 @@ mysqli_close($con);
 
     <title>Porn Gifs: Best XXX and Blowjob Gifs | <?php echo $title ?></title>
     <meta name="description" content="<?php echo $description?> | Porn Gifs and Blowjob Gifs">
+  
+    <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">

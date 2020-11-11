@@ -49,6 +49,9 @@ $created = $cat[4];
 
     <title><?php echo $title; ?> Category | Porn Gifs: Best XXX and Blowjob Gifs</title>
     <meta name="description" content="Visit here is get the newest and top porn gifs.  <?php echo $description; ?> Check it out now!">
+  
+    <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
