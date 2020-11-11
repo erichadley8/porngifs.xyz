@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "root";
+$username = "gif";
 $password = "Scbwd2blah123";
 $database = "porngifs";
 
