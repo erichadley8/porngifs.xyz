@@ -187,7 +187,7 @@ $result = $conn->query($query);
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/1.jpg" height="600" class="d-block w-100" alt="Blowjob gif">
+          <img src="http://porngifs.lovestoblog.com/images/1.jpg" height="600" class="d-block w-100" alt="Blowjob gif">
           <div class="carousel-caption d-none d-md-block">
             <h5>The Porn Gif and Blowjob Gifs Carousel</h5>
             <p>

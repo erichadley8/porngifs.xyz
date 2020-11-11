@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "gif";
 $password = "Scbwd2blah123";
-$database = "gif";
+$database = "porngifs";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
@@ -109,7 +109,7 @@ mysqli_close($con);
                   </button>
                 </div>
                 <div class="modal-body">
-                  <textarea class="form-control" rows="3"><iframe src="http://localhost/gifs/<?php echo $id;?>.gif"></iframe></textarea>
+                  <textarea class="form-control" rows="3"><iframe src="http://porngifs.lovestoblog.com/gifs/<?php echo $id;?>.gif"></iframe></textarea>
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@ mysqli_close($con);
     <h1><?php echo $title?></h1>
         <h2><?php echo $description?></h2>
         
-        <img src="gifs/<?php echo $id?>.gif" style="width:100%" alt="<?php echo $title?>"/>
+        <img src="http://porngifs.lovestoblog.com/gifs/<?php echo $id?>.gif" style="width:100%" alt="<?php echo $title?>"/>
     </div>
 
 
@@ -193,7 +193,7 @@ mysqli_close($con);
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/1.jpg" height="600" class="d-block w-100" alt="Blowjob gif">
+          <img src="http://porngifs.lovestoblog.com/images/1.jpg" height="600" class="d-block w-100" alt="Blowjob gif">
           <div class="carousel-caption d-none d-md-block">
             <h5>The Porn Gif and Blowjob Gifs Carousel</h5>
             <p>
@@ -212,7 +212,7 @@ mysqli_close($con);
         ?>
 
         <div class="carousel-item">
-          <a href="gif.php?id=<?php echo $row["id"] ?>"><img src="gifs/<?php echo $row["id"] ?>.gif" height="600" class="d-block w-100" alt="<?php echo $row["title"] ?>"></a>
+          <a href="gif.php?id=<?php echo $row["id"] ?>"><img src="http://porngifs.lovestoblog.com/gifs/<?php echo $row["id"] ?>.gif" height="600" class="d-block w-100" alt="<?php echo $row["title"] ?>"></a>
           <div class="carousel-caption d-none d-md-block">
             <h5><?php echo $row["title"] ?></h5>
             <p><?php echo $row["description"] ?></p>
