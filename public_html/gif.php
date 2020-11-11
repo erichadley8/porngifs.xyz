@@ -115,7 +115,7 @@ mysqli_close($con);
 
 
     </div>
-    <div class="col-6">
+    <div class="col-5">
       <div class="jumbotron">
         <h1 class="display-4">Top Quality Porn Gif and Blowjob Gif</h1>
         <p class="lead">Porn Gifs and Blowjob Gifs offer you several different options to do

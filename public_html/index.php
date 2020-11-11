@@ -102,7 +102,7 @@ $result = $conn->query($query);
 <!--JuicyAds END-->
 
       </div>
-    <div class="col-6">
+    <div class="col-5">
       <div class="jumbotron">
         <h1 class="display-4">The Best and Newest Porn Gifs, XXX Gifs and Blowjob Gifs</h1>
         <p class="lead">

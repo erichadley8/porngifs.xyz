@@ -106,7 +106,7 @@ $created = $cat[4];
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882689});</script>
 <!--JuicyAds END-->
     </div>
-    <div class="col-6">
+    <div class="col-5">
       <div class="jumbotron">
         <h1 class="display-4">Porn Gifs Categories | <?php echo $title; ?></h1>
         <p class="lead">
