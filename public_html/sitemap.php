@@ -171,8 +171,11 @@ if (!$conn) {
 
         <ul class="list-group">
             <li class="list-group-item"><a href="index.php">Home</a></li>
+            <li class="list-group-item"><a href="gif.php?id=1">Gif Page</a></li>
             <li class="list-group-item"><a href="categories.php">Categories</a></li>
+            <li class="list-group-item"><a href="category.php?id=1&p=1">Category Page</a></li>
             <li class="list-group-item"><a href="pornstars.php">Porn Stars</a></li>
+            <li class="list-group-item"><a href="pornstar.php?id=1&p=1">Porn Star Page</a></li>
             <li class="list-group-item"><a href="about.php">About Us</a></li>
             <li class="list-group-item"><a href="policy.php">Privacy and Policy</a></li>
             <li class="list-group-item"><a href="terms.php">Terms of Use</a></li>
