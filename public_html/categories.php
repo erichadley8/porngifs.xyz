@@ -38,6 +38,14 @@ $result = $conn->query($query);
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
+  <script type="application/javascript">
+    var ad_idzone = "4061839",
+    ad_width = "900",
+    ad_height = "250",
+    v_pos = "top",
+    h_pos = "left";
+</script>
+<script type="application/javascript" src="https://a.realsrv.com/js.php?t=17&idzone=4061839"></script>
   <script type="application/javascript" src="https://syndication.realsrv.com/splash.php?idzone=4061833"></script>
   <script type="application/javascript">
 (function() {

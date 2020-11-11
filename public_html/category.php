@@ -63,6 +63,14 @@ $created = $cat[4];
   
   </head>
   <body>
+  <script type="application/javascript">
+    var ad_idzone = "4061839",
+    ad_width = "900",
+    ad_height = "250",
+    v_pos = "top",
+    h_pos = "left";
+</script>
+<script type="application/javascript" src="https://a.realsrv.com/js.php?t=17&idzone=4061839"></script>
   <script type="application/javascript" src="https://syndication.realsrv.com/splash.php?idzone=4061833"></script>
   <script type="application/javascript">
 (function() {
