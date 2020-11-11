@@ -169,7 +169,22 @@ mysqli_close($con);
     
     </div>
     <div class="row">
-      Horizontal Header Ad
+      <div class="col-6">
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882693" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882693});</script>
+<!--JuicyAds END-->
+
+      </div>
+
+      <div class="col-6">
+<!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882696" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882696});</script>
+<!--JuicyAds END-->
+      </div>
     </div>
     
     <div class="row">
