@@ -177,7 +177,13 @@ $result = $conn->query($query);
     <div class="col-8">
     <h1 class="text-center">Most Recent Porn and Blowjob Gifs</h1>
       <div class="row">
-        Content Header Ad Space
+  
+      <!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882707" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882707});</script>
+<!--JuicyAds END-->
+
       </div>
     <div class="card-columns">
 
