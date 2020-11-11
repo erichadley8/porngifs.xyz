@@ -67,7 +67,7 @@ $result = $conn->query($query);
     <div class="container-fluid">
     <div class="row">
 
-      <div class="col">
+      <div class="col-6">
       <!-- JuicyAds v3.1 -->
       <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
       <ins id="882686" data-width="728" data-height="102"></ins>
@@ -75,7 +75,7 @@ $result = $conn->query($query);
       <!--JuicyAds END-->
     </div>
 
-<div class="col">
+<div class="col-6">
       <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882687" data-width="728" data-height="102"></ins>
@@ -83,6 +83,8 @@ $result = $conn->query($query);
 <!--JuicyAds END-->
     </div>
     </div>
+
+
     <div class="row">
     <div class="col">
       Vertical Sidebar Ad
