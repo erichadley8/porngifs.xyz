@@ -184,7 +184,11 @@ $result = $conn->query($query);
 
 
 <div class="row">
-        Content Footer Ad Space
+        <!-- JuicyAds v3.1 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="882708" data-width="728" data-height="102"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882708});</script>
+<!--JuicyAds END-->
       </div>
 
 
