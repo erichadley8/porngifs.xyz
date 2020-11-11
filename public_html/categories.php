@@ -186,17 +186,14 @@ $result = $conn->query($query);
     <div class="col-2">
       <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
-<ins id="882699" data-width="728" data-height="102"></ins>
-<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882699});</script>
+<ins id="882705" data-width="160" data-height="612"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882705});</script>
 <!--JuicyAds END-->
-    <!-- JuicyAds v3.1 -->
+<!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
-<ins id="882700" data-width="728" data-height="102"></ins>
-<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882700});</script>
+<ins id="882706" data-width="160" data-height="612"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882706});</script>
 <!--JuicyAds END-->
-    </div>
-    
-
     
   </div>
 
