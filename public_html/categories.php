@@ -45,11 +45,14 @@ $result = $conn->query($query);
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+              <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="categories.php">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pornstars.php">Porn Stars</a>
             </li>
           </ul>
         </div>
@@ -161,7 +164,7 @@ $result = $conn->query($query);
 
     </div>
     <div class="col-8">
-    <h1 class="text-center">Most Recent Porn and Blowjob Gifs</h1>
+    <h1 class="text-center">Porn and Blowjob Gifs Categories Page</h1>
       <div class="row justify-content-center">
         
 <!-- JuicyAds v3.1 -->

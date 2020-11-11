@@ -1,5 +1,4 @@
 <?php
-
 $servername = "localhost";
 $username = "gif";
 $password = "Scbwd2blah123";
@@ -7,43 +6,24 @@ $database = "porngifs";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
-$id = $_GET["id"];
-
-$query = "SELECT * FROM gifs WHERE id=$id";
-
-$res = mysqli_query($conn, $query);
-
-$row = mysqli_fetch_row($res);
-
-$id = $row[0];
-$title = $row[1];
-$description = $row[2];
-$categoryId = $row[3];
-$created = $row[4];
-
-
-$query2 = "SELECT * FROM gifs";
-
-$res2 = mysqli_query($conn,$query2);
-
-$num_rows = mysqli_num_rows($res2);
-
-$previous = $id - 1;
-$next = $id + 1;
-
-if($id==1){
-  $previous = $num_rows;
-  $next = $id + 1;
-}
-if($id==$num_rows){
-  $previous = $id - 1;
-  $next = 1;
-}
-
-mysqli_free_result($res);
-mysqli_close($con);
-
-?>
+if(isset($_GET["p"])){
+    $page = $_GET["p"];
+  }else{
+    $page = 1;
+  }
+  
+  $records = 20;
+  $offset = ($page - 1) * $records;
+  
+  $total_pages_sql = "SELECT COUNT(*) FROM pornstars";
+  $res3 = mysqli_query($conn,$total_pages_sql);
+  $total_rows = mysqli_fetch_array($res3)[0];
+  $total_pages = ceil($total_rows/$records);
+  
+  $query = "SELECT * FROM pornstars ORDER BY id DESC LIMIT $offset, $records";
+  $result = $conn->query($query);
+  
+?> 
 
 
 <!doctype html>
@@ -63,9 +43,10 @@ mysqli_close($con);
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Porn Gifs: Best XXX and Blowjob Gifs | <?php echo $title ?></title>
-    <meta name="description" content="<?php echo $description?> | Porn Gifs and Blowjob Gifs">
-  
+    <title>Porn Star Page | Porn Gifs: Best XXX and Blowjob Gifs</title>
+    <meta name="description" content="Visit here to see what Porn Gifs and Blow Gifs Porn Star Page.
+    Porn Gifs has a vast collection of all the best porn stars which are updated daily.  Don't miss your chance!">
+
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
@@ -76,7 +57,7 @@ mysqli_close($con);
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-          <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
@@ -90,95 +71,72 @@ mysqli_close($con);
       </nav>
 
     <div class="container-fluid">
-    
     <div class="row">
-    
+        <div class="col-6">
+        <!-- JuicyAds v3.1 -->
+        <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+        <ins id="882686" data-width="728" data-height="102"></ins>
+        <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882686});</script>
+        <!--JuicyAds END-->
+</div>
+      
       <div class="col-6">
-      <!-- JuicyAds v3.1 -->
-      <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
-      <ins id="882686" data-width="728" data-height="102"></ins>
-      <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882686});</script>
-      <!--JuicyAds END-->
-      </div>
-
-      <div class="col-6">
-
-      <!-- JuicyAds v3.1 -->
+        <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882687" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882687});</script>
 <!--JuicyAds END-->
-    </div>
+
+</div>
+
     </div>
     <div class="row">
     <div class="col">
-<!-- JuicyAds v3.1 -->
+    <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882688" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882688});</script>
 <!--JuicyAds END-->
 </div>
 <div class="col">
-     <!-- JuicyAds v3.1 -->
-<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+ <!-- JuicyAds v3.1 -->
+ <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882689" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882689});</script>
 <!--JuicyAds END-->
 
-
     </div>
     <div class="col-5">
       <div class="jumbotron">
-        <h1 class="display-4">Top Quality Porn Gif and Blowjob Gif</h1>
-        <p class="lead">Porn Gifs and Blowjob Gifs offer you several different options to do
-          with the XXX and porn content as you so pleasure.  Please feel free to share, Download
-          and embed of porn gifs.
+        <h1 class="display-4">Porn Gifs, XXX Gifs and Blowjob Gifs Pornstar Page</h1>
+        <p class="lead">
+          This is Porn Gif, XXX Gif and Blowjob Gif pornstar page has a list of all the best pornstar
+          the world has to offer.  View the list and see your favorite porn stars in the best xxx porn and blows gifs.  
+          Find it here at Porn Gif and Blowjob Gif on the porn star page.
         </p>
         <hr class="my-4">
-        
-        <button class="btn btn-primary btn-lg" href="gifs/<?php echo $id?>.gif" download role="button">Download</button>
-        
-
-        <button class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Embed</button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Copy Code</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <textarea class="form-control" rows="3"><iframe src="http://porngifs.lovestoblog.com/gifs/<?php echo $id;?>.gif"></iframe></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-      </div>
+        <p>
+          Porn Gif and Blowjob Gif provides the only the best pornstar in the industry.  It's massive collection of porn gifs 
+          organized and easy to find any of your favorite porn stars.  Porn Gif and Blow Job Gif has all the famous and best porn stars          which all of our porn gif seekers love to view.  Use this page to easily find what type of porn gif you want
+          and access to them with easy!</p>
+        </div>
     
     </div>
        
-      <div class="col">
-     <!-- JuicyAds v3.1 -->
+    <div class="col">
+      <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882691" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882691});</script>
 <!--JuicyAds END-->
-
     </div>
     <div class="col">
-<!-- JuicyAds v3.1 -->
+    <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882692" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882692});</script>
 <!--JuicyAds END-->
     </div>
-    
     </div>
     <div class="row">
       <div class="col-6">
@@ -187,7 +145,6 @@ mysqli_close($con);
 <ins id="882693" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882693});</script>
 <!--JuicyAds END-->
-
       </div>
 
       <div class="col-6">
@@ -197,7 +154,9 @@ mysqli_close($con);
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882696});</script>
 <!--JuicyAds END-->
       </div>
-    </div>
+      
+      
+          </div>
     
     <div class="row">
     <div class="col-2">
@@ -211,51 +170,63 @@ mysqli_close($con);
 <ins id="882698" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882698});</script>
 <!--JuicyAds END-->
-      
-      
-          </div>
+
+
+
+    </div>
     <div class="col-8">
+    <h1 class="text-center">Porn and Blowjob Gifs Pornstar Page</h1>
       <div class="row justify-content-center">
-        <!-- JuicyAds v3.1 -->
+        
+<!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882707" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882707});</script>
 <!--JuicyAds END-->
+
       </div>
-    <div class="container">
-    <h1><?php echo $title?></h1>
-        <h2><?php echo $description?></h2>
-        
-        <img src="http://porngifs.lovestoblog.com/gifs/<?php echo $id?>.gif" style="width:100%" alt="<?php echo $title?>"/>
-    </div>
 
+      <ul class="list-group">
+      <?php
+        while($row = $result->fetch_assoc()){
+        ?>
+        <li class="list-group-item"><a href="pornstar.php?id=<?php echo $row["id"];?>"><?php echo $row['pornstar'];?></a> - <?php echo $row["description"]; ?></li>
 
+        <?php
+        }
+        ?>
+    </ul>
 
 
 
 <div class="row justify-content-center">
-     <!-- JuicyAds v3.1 -->
+        <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882708" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882708});</script>
 <!--JuicyAds END-->
       </div>
 
-
       <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="gif.php?id=<?php echo $previous ?>">Previous</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="gif.php?id=<?php echo $next ?>">Next</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="?p=1">First</a></li>
+          
+          <li class="page-item <?php if($page<=1){ echo "disabled"; } ?>">
+            <a class="page-link" href="<?php if($page <= 1){ echo '#'; } else { echo "?p=".($page - 1); } ?>">Previous</a>
+          </li>
+
+          <li class="page-item <?php if($page >= $total_pages){ echo 'disabled'; } ?>">
+            <a class="page-link" href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?p=".($page + 1); } ?>">Next</a>
+          </li>
+          
+          <li class="page-item"><a class="page-link" href="?p=<?php echo $total_pages ?>">Last</a></li>
+        </ul>
+      </nav>
+
+
     </div>
     <div class="col-2">
-
-<!-- JuicyAds v3.1 -->
+      <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882705" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882705});</script>
@@ -265,29 +236,28 @@ mysqli_close($con);
 <ins id="882706" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882706});</script>
 <!--JuicyAds END-->
-    </div>
-
     
   </div>
 
 
   <div class="row">
-      
-<div class="col-6">
+
+  <div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882710" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882710});</script>
 <!--JuicyAds END-->
-</div>
+  </div>
 
-<div class="col-6">
+  <div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882712" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882712});</script>
 <!--JuicyAds END-->
-</div>
+
+  </div>
 
     </div>
   <div class="row">
@@ -304,7 +274,7 @@ mysqli_close($con);
 <!--JuicyAds END-->
     </div>
     <div class="col-8">
-                
+
     <div class="row justify-content-center">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
@@ -382,7 +352,7 @@ mysqli_close($con);
       </a>
     </div>
     
-
+    
     <div class="row justify-content-center">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
@@ -406,7 +376,7 @@ mysqli_close($con);
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882732});</script>
 <!--JuicyAds END-->
 </div>
-    
+
     
     
     </div>
@@ -425,37 +395,32 @@ mysqli_close($con);
   </div>
 
 
+<div class="row">
+<div class="col-6">
 
-
-  <div class="row">
-      
-          <div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882720" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882720});</script>
 <!--JuicyAds END-->
-          </div>
+</div>
 
-          <div class="col-6">
-
+<div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882721" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882721});</script>
 <!--JuicyAds END-->
-          </div>
+
+</div>
+</div>
 
 
-    </div>
 
 
-      
-
-    </div>
+  </div>
 
     
-     
     <footer>
         <ul class="nav justify-content-center navbar-dark bg-dark">
           <li class="nav-item">
@@ -470,12 +435,23 @@ mysqli_close($con);
         </ul>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   
    <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fac0d6152e70f46"></script>
 
-   
     </body>
 </html>
+
+
+
+
+
+
+
+
+<?php
+$conn->close();
+
+?>
