@@ -6,6 +6,10 @@ $database = "porngifs";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
 if(isset($_GET["p"])){
   $page = $_GET["p"];
 }else{
