@@ -100,6 +100,10 @@ if (!$conn) {
               <a class="nav-link" href="pornstars.php">Porn Stars</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="pics.php">Porn Pics</a>
+            </li>
+
+            <li class="nav-item">
               <a class="nav-link" href="about.php">About Us</a>
             </li>
           </ul>

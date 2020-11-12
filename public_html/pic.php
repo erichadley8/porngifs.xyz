@@ -1,4 +1,5 @@
 <?php
+
 $servername = "localhost";
 $username = "gif";
 $password = "Scbwd2blah123";
@@ -6,11 +7,49 @@ $database = "porngifs";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+$id = $_GET["id"];
+
+$query = "SELECT * FROM pics WHERE id=$id";
+
+$res = mysqli_query($conn, $query);
+
+$row = mysqli_fetch_row($res);
+
+$id = $row[0];
+$title = $row[1];
+$description = $row[2];
+$categoryId = $row[3];
+$created = $row[4];
+$views = $row[6];
+
+$views = $views + 1;
+$update_sql = "UPDATE pics SET views=".$views." WHERE id=".$id;
+$update_res = mysqli_query($conn,$update_sql);
+
+
+$query2 = "SELECT * FROM pics";
+
+$res2 = mysqli_query($conn,$query2);
+
+$num_rows = mysqli_num_rows($res2);
+
+$previous = $id - 1;
+$next = $id + 1;
+
+if($id==1){
+  $previous = $num_rows;
+  $next = $id + 1;
+}
+if($id==$num_rows){
+  $previous = $id - 1;
+  $next = 1;
 }
 
+mysqli_free_result($res);
+mysqli_close($con);
+
 ?>
+
 
 <!doctype html>
 <html lang="en">
@@ -30,9 +69,8 @@ if (!$conn) {
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>About Us | Porn Gifs: Best XXX and Blowjob Gifs></title>
-    <meta name="description" content="Porn Gifs and Blowjob Gifs About Page.  Here at Porn gifs and blowjob gifs we are all
-    about providing the best collection of porn and blowjob gifs to our visitors at the highest quality">
+    <title>Porn Gifs Pictures: Best XXX and Blowjob Gifs | <?php echo $title ?></title>
+    <meta name="description" content="<?php echo $description?> | Porn Gifs and Blowjob Gifs">
   
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
@@ -149,12 +187,38 @@ if (!$conn) {
     </div>
     <div class="col-5">
       <div class="jumbotron">
-        <h1 class="display-4">Top Quality Porn Gif and Blowjob Gif About Us Page</h1>
-        <p class="lead">Porn Gifs and Blowjob Gifs offer you several different options to do
+        <h1 class="display-4">Top Quality Porn Pics and Blowjob Pics</h1>
+        <p class="lead">Porn pics and Blowjob Pics offer you several different options to do
           with the XXX and porn content as you so pleasure.  Please feel free to share, Download
-          and embed of porn gifs.  Please take the time to learn more about how to use Porn gif and blowjob gif website below.
+          and embed of porn pics.
         </p>
+        <hr class="my-4">
+        
+        <button class="btn btn-primary btn-lg" href="pics/<?php echo $id?>.jpg" download role="button">Download</button>
+        
+
+        <button class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Embed</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Copy Code</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <textarea class="form-control" rows="3"><iframe src="http://porngifs.lovestoblog.com/pics/<?php echo $id;?>.jpg"></iframe></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
       </div>
+    
     </div>
        
       <div class="col">
@@ -217,67 +281,11 @@ if (!$conn) {
 <!--JuicyAds END-->
       </div>
     <div class="container">
-        <h1>Privacy and Policy | Porn Gifs and Blow Gifs Site</h1>
-
-        <h3>Scope</h3>
-<p>
-This privacy policy applies to information we collect:
-</p>
-<p>
-    on the Websites and your email communications with the Websites,
-    through our mobile applications that provide dedicated non-browser-based interaction between you and the Websites, or
-    when you interact with our advertising and applications on third-party websites and services, if those applications or advertising include links to this privacy policy.
-</p>
-
-<h3>Cookies and Automatic Data Collection Technologies</h3>
-<p>
-As you navigate through and interact with our Websites, we use automatic data collection technologies to collect website activity data.
-
-We use cookies, which are small text files that are stored in your web browser or downloaded to your device when you visit a website
-
-We currently use the following types of cookies, which are set by the Websites’ domains, or by other domains we own or control:
-</p>
-<p>
-    Strictly necessary cookies: These are cookies that are required for the operation of our Websites. These include, for example, cookies that enable a user to log in to our Websites and to check if a user is allowed access to a particular service or content.
-    Functionality cookies: These cookies help us to personalize and enhance your online experience on our Websites. This type of cookies allows us to recognize you when you return to our Websites and to remember, for example, your choice of language.
-    Analytics cookies: These cookies allow us to recognize and count the number of users and to see how users use and explore our Websites. These cookies help us to improve our Websites, for example by ensuring that all users are able to find what they are looking for easily.
-    Targeting and Advertising cookies: These cookies record visits of a user on our Websites, the pages a user visits and the links a user follows in order to enable us to make our Websites more relevant to the user’s interests and to help us serve ads that might be of interest to the user. Targeting and advertising cookies are only used for unregistered users and registered users.
-    Cookies can be either session cookies or persistent cookies. A session cookie expires automatically when you close your browser. A persistent cookie will remain until it expires or you delete your cookies.
-</p>
-
-<p>
-You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent. If you disable or refuse cookies, please note that some parts of the Websites may then be inaccessible or not function properly.
-
-Do Not Track: Our systems do not recognize browser “Do Not Track” signals.
-
-Use of Google Analytics. We use Google as a service provider to collect and analyze information about how users use the Websites, including by collecting website activity data through first-party cookies set by our domains, and third-party cookies set by Google. Because we activated IP anonymization for Google Analytics, Google will anonymize the last octet of a particular IP address and will not store your full IP address. Google will use the information only for the purpose of providing Google Analytics services to us, and will not use this information for other purposes. The information collected by Google Analytics may be transmitted to and stored by Google on servers in the United States pursuant to standard contractual clauses approved by the EU. You can learn more on how Google uses data here, and you can opt-out of Google Analytics by visiting the Google Analytics opt-out page.
-</p>
-
-<h3>Third-party Use of Cookies and Other Tracking Technologies</h3>
-<p>
-Some content or applications, including advertisements, on Pornhub are provided or served by third parties. These third parties may use cookies alone or in conjunction with other tracking technologies to collect information about you when you use Pornhub. Unless expressly stated otherwise, Pornhub does not provide any personal information to these third parties, however they may collect information, including your IP address, advertisements you click, time zone setting and location, and information about your browser, operating system and devices you use to access Pornhub. They may use this information to provide you with interest-based advertising or other targeted content. They may track users across different websites and over time.
-
-You can set your browser to refuse all third-party cookies, or to alert you when cookies are being sent.
-</p>
-<h3>
-Third-Party Links and Sites
-</h3>
-<p>
-If you click on a link to a third party site, you will be taken to websites we do not control. This policy does not apply to the privacy practices of these websites. Read the privacy policy of other websites carefully. We are not responsible for these third party practices.
-</p>
-<h3>
-Changes to Our Privacy Policy
-</h3>
-<p>
-We may modify or revise our privacy policy from time to time. If we change anything in our privacy policy, the date of change will be reflected in the “last modified date”. We may attempt to notify you of any material changes as required by law. Please also periodically review the most up-to-date version of our privacy policy, which will be posted at this location, so you are aware of any changes.
-</p>
-<h3>
-Contact Information
-</h3>
-<p>
-If you have any questions about this privacy policy or our information-handling practices, please contact us at support@porngifs.xyz.</p>
-
-     </div>
+    <h1><?php echo $title?></h1>
+        <h2><?php echo $description?></h2>
+        <h3>Views: <?php echo $views;?></h3>
+        <img src="http://porngifs.lovestoblog.com/pics/<?php echo $id?>.jpg" style="width:100%" alt="<?php echo $title?>"/>
+    </div>
 
 
 
@@ -291,6 +299,17 @@ If you have any questions about this privacy policy or our information-handling 
 <!--JuicyAds END-->
       </div>
 
+
+      <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="pic.php?id=<?php echo $previous ?>">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="pic.php?id=<?php echo $next ?>">Next</a>
+    </li>
+  </ul>
+</nav>
     </div>
     <div class="col-2">
 
@@ -510,18 +529,15 @@ If you have any questions about this privacy policy or our information-handling 
     </footer>
 
 
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
    <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fac0d6152e70f46"></script>
+
 <script>
 window.open("http://www.porngifs.xyz/popup.php");
 </script>
    
     </body>
 </html>
-
-
-
-
-

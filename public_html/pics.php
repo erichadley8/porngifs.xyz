@@ -10,7 +10,27 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-?>
+if(isset($_GET["p"])){
+  $page = $_GET["p"];
+}else{
+  $page = 1;
+}
+
+$records = 9;
+$offset = ($page - 1) * $records;
+
+$total_pages_sql = "SELECT COUNT(*) FROM pics";
+$res3 = mysqli_query($conn,$total_pages_sql);
+$total_rows = mysqli_fetch_array($res3)[0];
+$total_pages = ceil($total_rows/$records);
+
+$query = "SELECT * FROM pics ORDER BY id DESC LIMIT $offset, $records";
+$result = $conn->query($query);
+
+
+
+?> 
+
 
 <!doctype html>
 <html lang="en">
@@ -30,11 +50,13 @@ if (!$conn) {
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>About Us | Porn Gifs: Best XXX and Blowjob Gifs></title>
-    <meta name="description" content="Porn Gifs and Blowjob Gifs About Page.  Here at Porn gifs and blowjob gifs we are all
-    about providing the best collection of porn and blowjob gifs to our visitors at the highest quality">
-  
+    <title>Porn Pictures | Porn Gifs: Best XXX and Blowjob Gifs</title>
+    <meta name="description" content="Visit here is get the newest and top porn and blowjob pics the internet has to offer.
+    Porn Gifs is updated multiple times a day with only the best XXX and blowjob pics.  Check it out now!">
+
     <script data-ad-client="ca-pub-2176049440410237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="juicyads-site-verification" content="dc3507f58561c6e2c5fd52aeb511db8a">
+    <meta name="exoclick-site-verification" content="c1868bbd5315ffed1bbe529c2dbd7162">
   </head>
   <body>
   <script type="application/javascript">
@@ -102,6 +124,7 @@ if (!$conn) {
             <li class="nav-item">
               <a class="nav-link" href="pics.php">Porn Pics</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="about.php">About Us</a>
             </li>
@@ -110,19 +133,17 @@ if (!$conn) {
       </nav>
 
     <div class="container-fluid">
-    
     <div class="row">
-    
+
       <div class="col-6">
       <!-- JuicyAds v3.1 -->
       <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
       <ins id="882686" data-width="728" data-height="102"></ins>
       <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882686});</script>
       <!--JuicyAds END-->
-      </div>
+    </div>
 
-      <div class="col-6">
-
+<div class="col-6">
       <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882687" data-width="728" data-height="102"></ins>
@@ -130,40 +151,52 @@ if (!$conn) {
 <!--JuicyAds END-->
     </div>
     </div>
+
+
     <div class="row">
     <div class="col">
-<!-- JuicyAds v3.1 -->
+      
+     <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882688" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882688});</script>
-<!--JuicyAds END-->
+<!--JuicyAds END--> 
 </div>
 <div class="col">
-     <!-- JuicyAds v3.1 -->
-<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+ <!-- JuicyAds v3.1 -->
+ <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882689" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882689});</script>
 <!--JuicyAds END-->
 
-
-    </div>
+      </div>
     <div class="col-5">
       <div class="jumbotron">
-        <h1 class="display-4">Top Quality Porn Gif and Blowjob Gif About Us Page</h1>
-        <p class="lead">Porn Gifs and Blowjob Gifs offer you several different options to do
-          with the XXX and porn content as you so pleasure.  Please feel free to share, Download
-          and embed of porn gifs.  Please take the time to learn more about how to use Porn gif and blowjob gif website below.
+        <h1 class="display-4">The Best and Newest Porn Pics, XXX Pics and Blowjob Pics</h1>
+        <p class="lead">
+          This is Porn Gif, XXX Gif and Blowjob Gif the best X rated gif media site on the internet.
+          Here you can find the best and top rated porn gifs and blowjob gifs that the porn industry
+          has to offer.  Find it here at Porn Gif and Blowjob Gif.
         </p>
+        <hr class="my-4">
+        <p>
+          Porn Gif and Blowjob Gif provides top quality media taken from the best and top rated porn videos 
+          and porn movies in the industry in gif format.  Porn videos and porn movies can take a lot of resources
+          to load and maintain on a slow or limited internet connect.  Here at Porn Gif and Blowjob Gif we 
+          have a solution for your porno needs even if you have a limited network resources.  Also easily download
+          and save the porn and blowjob gifs on your hardware without having to use your network connection at all.
+        </p>
+        <a class="btn btn-primary btn-lg" href="about.php" role="button">Learn more</a>
       </div>
+    
     </div>
        
       <div class="col">
-     <!-- JuicyAds v3.1 -->
+      <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882691" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882691});</script>
 <!--JuicyAds END-->
-
     </div>
     <div class="col">
 <!-- JuicyAds v3.1 -->
@@ -175,22 +208,22 @@ if (!$conn) {
     
     </div>
     <div class="row">
-      <div class="col-6">
+        <div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882693" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882693});</script>
 <!--JuicyAds END-->
+    </div>
 
-      </div>
-
-      <div class="col-6">
+<div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882696" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882696});</script>
 <!--JuicyAds END-->
-      </div>
+</div>
+
     </div>
     
     <div class="row">
@@ -205,92 +238,72 @@ if (!$conn) {
 <ins id="882698" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882698});</script>
 <!--JuicyAds END-->
-      
-      
-          </div>
+
+    </div>
     <div class="col-8">
+    <h1 class="text-center">Most Recent Porn and Blowjob Pics</h1>
       <div class="row justify-content-center">
-        <!-- JuicyAds v3.1 -->
+  
+      <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882707" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882707});</script>
 <!--JuicyAds END-->
+
       </div>
-    <div class="container">
-        <h1>Privacy and Policy | Porn Gifs and Blow Gifs Site</h1>
+    <div class="card-columns">
 
-        <h3>Scope</h3>
-<p>
-This privacy policy applies to information we collect:
-</p>
-<p>
-    on the Websites and your email communications with the Websites,
-    through our mobile applications that provide dedicated non-browser-based interaction between you and the Websites, or
-    when you interact with our advertising and applications on third-party websites and services, if those applications or advertising include links to this privacy policy.
-</p>
+<?php
+  while($row = $result->fetch_assoc()){
 
-<h3>Cookies and Automatic Data Collection Technologies</h3>
-<p>
-As you navigate through and interact with our Websites, we use automatic data collection technologies to collect website activity data.
+?>
+<div class="card">
+    <a href="pic.php?id=<?php echo $row["id"]?>"><img src="http://porngifs.lovestoblog.com/pics/<?php echo $row["id"]?>.jpg" class="card-img-top" alt="<?php echo $row["title"]?>"></a>
+    <div class="card-body">
+      <h5 class="card-title"><?php echo $row["title"]?></h5>
+      <p class="card-text"><?php echo $row["description"]?></p>
+      <p class="card-text"><?php echo $row["views"]?> views</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><?php echo $row["created"]?></small>
+    </div>
+</div>
 
-We use cookies, which are small text files that are stored in your web browser or downloaded to your device when you visit a website
-
-We currently use the following types of cookies, which are set by the Websites’ domains, or by other domains we own or control:
-</p>
-<p>
-    Strictly necessary cookies: These are cookies that are required for the operation of our Websites. These include, for example, cookies that enable a user to log in to our Websites and to check if a user is allowed access to a particular service or content.
-    Functionality cookies: These cookies help us to personalize and enhance your online experience on our Websites. This type of cookies allows us to recognize you when you return to our Websites and to remember, for example, your choice of language.
-    Analytics cookies: These cookies allow us to recognize and count the number of users and to see how users use and explore our Websites. These cookies help us to improve our Websites, for example by ensuring that all users are able to find what they are looking for easily.
-    Targeting and Advertising cookies: These cookies record visits of a user on our Websites, the pages a user visits and the links a user follows in order to enable us to make our Websites more relevant to the user’s interests and to help us serve ads that might be of interest to the user. Targeting and advertising cookies are only used for unregistered users and registered users.
-    Cookies can be either session cookies or persistent cookies. A session cookie expires automatically when you close your browser. A persistent cookie will remain until it expires or you delete your cookies.
-</p>
-
-<p>
-You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent. If you disable or refuse cookies, please note that some parts of the Websites may then be inaccessible or not function properly.
-
-Do Not Track: Our systems do not recognize browser “Do Not Track” signals.
-
-Use of Google Analytics. We use Google as a service provider to collect and analyze information about how users use the Websites, including by collecting website activity data through first-party cookies set by our domains, and third-party cookies set by Google. Because we activated IP anonymization for Google Analytics, Google will anonymize the last octet of a particular IP address and will not store your full IP address. Google will use the information only for the purpose of providing Google Analytics services to us, and will not use this information for other purposes. The information collected by Google Analytics may be transmitted to and stored by Google on servers in the United States pursuant to standard contractual clauses approved by the EU. You can learn more on how Google uses data here, and you can opt-out of Google Analytics by visiting the Google Analytics opt-out page.
-</p>
-
-<h3>Third-party Use of Cookies and Other Tracking Technologies</h3>
-<p>
-Some content or applications, including advertisements, on Pornhub are provided or served by third parties. These third parties may use cookies alone or in conjunction with other tracking technologies to collect information about you when you use Pornhub. Unless expressly stated otherwise, Pornhub does not provide any personal information to these third parties, however they may collect information, including your IP address, advertisements you click, time zone setting and location, and information about your browser, operating system and devices you use to access Pornhub. They may use this information to provide you with interest-based advertising or other targeted content. They may track users across different websites and over time.
-
-You can set your browser to refuse all third-party cookies, or to alert you when cookies are being sent.
-</p>
-<h3>
-Third-Party Links and Sites
-</h3>
-<p>
-If you click on a link to a third party site, you will be taken to websites we do not control. This policy does not apply to the privacy practices of these websites. Read the privacy policy of other websites carefully. We are not responsible for these third party practices.
-</p>
-<h3>
-Changes to Our Privacy Policy
-</h3>
-<p>
-We may modify or revise our privacy policy from time to time. If we change anything in our privacy policy, the date of change will be reflected in the “last modified date”. We may attempt to notify you of any material changes as required by law. Please also periodically review the most up-to-date version of our privacy policy, which will be posted at this location, so you are aware of any changes.
-</p>
-<h3>
-Contact Information
-</h3>
-<p>
-If you have any questions about this privacy policy or our information-handling practices, please contact us at support@porngifs.xyz.</p>
-
-     </div>
-
+<?php
+}
+?>
+</div>
 
 
 
 
 <div class="row justify-content-center">
-     <!-- JuicyAds v3.1 -->
+      <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882708" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882708});</script>
 <!--JuicyAds END-->
       </div>
 
+
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="?p=1">First</a></li>
+          
+          <li class="page-item <?php if($page<=1){ echo "disabled"; } ?>">
+            <a class="page-link" href="<?php if($page <= 1){ echo '#'; } else { echo "?p=".($page - 1); } ?>">Previous</a>
+          </li>
+
+          <li class="page-item <?php if($page >= $total_pages){ echo 'disabled'; } ?>">
+            <a class="page-link" href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?p=".($page + 1); } ?>">Next</a>
+          </li>
+          
+          <li class="page-item"><a class="page-link" href="?p=<?php echo $total_pages ?>">Last</a></li>
+        </ul>
+      </nav>
+  
+  
     </div>
     <div class="col-2">
 
@@ -341,9 +354,10 @@ If you have any questions about this privacy policy or our information-handling 
 <ins id="882716" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882716});</script>
 <!--JuicyAds END-->
+
     </div>
     <div class="col-8">
-                
+
     <div class="row justify-content-center">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
@@ -359,7 +373,6 @@ If you have any questions about this privacy policy or our information-handling 
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882726});</script>
 <!--JuicyAds END-->
     </div>
-
 
 <div class="row justify-content-center">
 <!-- JuicyAds v3.1 -->
@@ -421,7 +434,7 @@ If you have any questions about this privacy policy or our information-handling 
       </a>
     </div>
     
-
+    
     <div class="row justify-content-center">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
@@ -445,8 +458,8 @@ If you have any questions about this privacy policy or our information-handling 
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882732});</script>
 <!--JuicyAds END-->
 </div>
-    
-    
+
+
     
     </div>
     <div class="col-2">
@@ -460,42 +473,38 @@ If you have any questions about this privacy policy or our information-handling 
 <ins id="882718" data-width="160" data-height="612"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882718});</script>
 <!--JuicyAds END-->
+
+
     </div>
   </div>
 
 
-
-
-  <div class="row">
-      
-          <div class="col-6">
+<div class="row">
+  <div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882720" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882720});</script>
 <!--JuicyAds END-->
-          </div>
+  </div>
 
-          <div class="col-6">
-
+<div class="col-6">
 <!-- JuicyAds v3.1 -->
 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="882721" data-width="728" data-height="102"></ins>
 <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':882721});</script>
 <!--JuicyAds END-->
-          </div>
+
+</div>
+
+</div>
 
 
-    </div>
 
 
-      
+  </div>
 
-    </div>
-
-    
-     
-    <footer>
+  <footer>
         <ul class="nav justify-content-center navbar-dark bg-dark">
           <li class="nav-item">
             <a class="nav-link" href="sitemap.php">Sitemap</a>
@@ -512,12 +521,12 @@ If you have any questions about this privacy policy or our information-handling 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-   <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fac0d6152e70f46"></script>
 <script>
 window.open("http://www.porngifs.xyz/popup.php");
 </script>
-   
     </body>
 </html>
 
@@ -525,3 +534,10 @@ window.open("http://www.porngifs.xyz/popup.php");
 
 
 
+
+
+
+<?php
+$conn->close();
+
+?>
