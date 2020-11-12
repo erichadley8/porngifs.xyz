@@ -3,14 +3,15 @@
 
 <head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6P8CSW815"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-182654556-1">
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-D6P8CSW815');
+  gtag('config', 'UA-182654556-1');
 </script>
 
 <meta charset="utf-8">
@@ -44,6 +45,9 @@
 </script>
 <script type="application/javascript" src="https://a.realsrv.com/js.php?t=17&idzone=4061839"></script>
   <script type="application/javascript" src="https://syndication.realsrv.com/splash.php?idzone=4061833"></script>
+  
+  
+  
   <script type="application/javascript">
 (function() {
 
