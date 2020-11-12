@@ -20,6 +20,11 @@ $title = $row[1];
 $description = $row[2];
 $categoryId = $row[3];
 $created = $row[4];
+$views = $row[6];
+
+$views = $views + 1;
+$update_sql = "UPDATE gifs SET views=".$views." WHERE id=".$id;
+$update_res = mysqli_query($conn,$update_sql);
 
 
 $query2 = "SELECT * FROM gifs";
@@ -274,7 +279,7 @@ mysqli_close($con);
     <div class="container">
     <h1><?php echo $title?></h1>
         <h2><?php echo $description?></h2>
-        
+        <h3>Views: <?php echo $views;?></h3>
         <img src="http://porngifs.lovestoblog.com/gifs/<?php echo $id?>.gif" style="width:100%" alt="<?php echo $title?>"/>
     </div>
 

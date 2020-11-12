@@ -249,6 +249,7 @@ $created = $cat[4];
     <div class="card-body">
       <h5 class="card-title"><?php echo $row["title"]?></h5>
       <p class="card-text"><?php echo $row["description"]?></p>
+      <p class="card-text"><?php echo $row["views"]?> views</p>
     </div>
     <div class="card-footer">
       <small class="text-muted"><?php echo $row["created"]?></small>
