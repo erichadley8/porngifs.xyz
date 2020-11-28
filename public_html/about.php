@@ -491,8 +491,6 @@ if (!$conn) {
    <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fac0d6152e70f46"></script>
 
-<script>
-window.open("http://www.porngifs.xyz/popup.php");
-</script>
+
     </body>
 </html>
